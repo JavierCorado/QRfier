@@ -1,2 +1,2 @@
 # QRfier
-Quick and simple web based QR generator
+Quick and simple web based QR generator.
