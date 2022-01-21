@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>QRfier</title>
+</head>
+<body>
+    <section id="container_box"  class="container">
+        <section id="info_box" class="info">
+            <section class="logo_box">
+                <img src="logo_icon.PNG" id="icon_logo"  alt="QRfier">
+                <h3 id="logo_word">QRfier</h3>
+            </section>
+            <h3 id="instruction_text">Enter your URL</h3>
+            <input id="input_box" type="text">
+            <button id="generate_button">Generate QR Code</button>        
+        </section>
+
+        <section id="code_box" class="code">
+            <h2>Your QR Code is ready!</h2>
+            <img id="qr_image" src="qr_code_sample.jpg" alt="">
+            <h4>Download:</h4>
+
+            <section id="download_buttons">
+                <button class="download_button"><span><img class="download_icon" src="icons8-descargar-50.png" alt=""></span>JPG</button>
+                <button class="download_button"><span><img class="download_icon" src="icons8-descargar-50.png" alt=""></span>SVG</button>
+            </section>
+        </section>
+
+
+    </section>
+    
+</body>
+</html>

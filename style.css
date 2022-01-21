@@ -1,0 +1,169 @@
+html {
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #6213c8 100%);
+    
+}
+
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    letter-spacing: -8px;
+    font-size: 125px;
+}
+
+#container_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    border-radius: 0px;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 90%;
+    margin: 20px;
+    
+}
+
+
+#code_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+    margin: 20px;
+    border: solid 5px #6213c8;
+    border-radius: 20px;
+    
+}
+
+#code_box h2 {
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#code_box h4 {
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+.logo_box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 20px 30px;
+}
+
+#icon_logo {
+    width: 70px;
+    height: 70px;
+}
+
+#logo_word {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 70px;
+    letter-spacing: -2px;
+    margin: 5px;
+    padding: 0 0 10px;
+    
+}
+
+#instruction_text {
+    font-family: 'Lato', sans-serif;
+    font-size: 55px;
+    letter-spacing: -2px; 
+    word-spacing: 5px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+#input_box {
+    width: 80%;
+    outline: 0;
+    border-width: 0 0 4px;
+    border-color: #000000;
+    margin-bottom: 120px;
+}
+
+#input_box[type="text"] {
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    
+}
+
+#generate_button {
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    width: 50%;
+    border: 3px solid #6213c8;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+
+#generate_button:hover {
+    color: white;
+    background-color: #6213c8;
+    font-size: 40px;
+}
+
+#qr_image {
+    height: 320px;
+    width: 370px;
+}
+
+#download_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 63%;
+    height: 50%;
+    margin: 10px
+}
+
+.download_button {
+    border: 3px solid #8b62c2;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #8b62c2;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.download_button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.download_icon {
+    height: 30px;
+}
