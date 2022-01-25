@@ -12,27 +12,41 @@
     <title>QRfier</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="nav_element" ><a href="#home">Home</a></li>
+            <li class="nav_element"><a href="#about">About</a></li>
+            <li class="nav_element"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="container_box"  class="container">
         <section id="info_box" class="info">
             <section class="logo_box">
                 <img src="logo_icon.PNG" id="icon_logo"  alt="QRfier">
                 <h3 id="logo_word">QRfier</h3>
             </section>
+            <h2>Create QR codes with one click</h2>
             <h3 id="instruction_text">Enter your URL</h3>
-            <input id="input_box" type="text">
+            <input id="input_box" type="text" placeholder="http://www.example.com">
             <button id="generate_button">Generate QR Code</button>        
         </section>
 
-        <section id="code_box" class="code">
+         <section>
+                <img id="drawing" src="illustrative-image.PNG" alt="QRfier">
+         </section>
+       
+
+
+        <!-- <section id="code_box" class="code">
             <h2>Your QR Code is ready!</h2>
             <img id="qr_image" src="qr_code_sample.jpg" alt="">
             <h4>Download:</h4>
-
             <section id="download_buttons">
                 <button class="download_button"><span><img class="download_icon" src="icons8-descargar-50.png" alt=""></span>JPG</button>
                 <button class="download_button"><span><img class="download_icon" src="icons8-descargar-50.png" alt=""></span>SVG</button>
             </section>
-        </section>
+        </section> -->
 
 
     </section>

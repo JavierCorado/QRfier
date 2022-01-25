@@ -1,40 +1,77 @@
 html {
-    background-image: linear-gradient(-225deg, #FFFEFF 0%, #6213c8 100%);
+    background-image: url(blob-scene-haikei.svg);
+
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul{
+    padding: 0px 350px;
+    float: right;
+    box-sizing: border-box;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #6213c8;
+    font-size: 25px;
+    transition: 0.1s;
     
 }
 
-h1 {
-    font-family: 'Palanquin Dark', sans-serif;
-    letter-spacing: -8px;
-    font-size: 125px;
+ a:hover {
+    border: solid #6213c8;
+    border-width: 0 0 2px;
 }
+
+.nav_element {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 30px;
+}
+
 
 #container_box {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     position: fixed;
+    box-sizing: border-box;
     border-radius: 0px;
     top: 50%;
     left: 50%;
-    width: 75%;
+    width: 80%;
     height: 75%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 #info_box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 60%;
     height: 90%;
     margin: 20px;
-    
+
 }
 
+#info_box h2 {
+    font-size: 2vw;
+}
+
+#drawing {
+    height: 85%;
+    padding: 65px 0px;
+    box-sizing: border-box;
+}
 
 #code_box {
     display: flex;
@@ -78,7 +115,7 @@ h1 {
 
 #logo_word {
     font-family: 'Palanquin Dark', sans-serif;
-    font-size: 70px;
+    font-size: 4vw;
     letter-spacing: -2px;
     margin: 5px;
     padding: 0 0 10px;
@@ -87,36 +124,47 @@ h1 {
 
 #instruction_text {
     font-family: 'Lato', sans-serif;
-    font-size: 55px;
+    font-size: 3vw;
     letter-spacing: -2px; 
     word-spacing: 5px;
-    color: #000000;
+    color: #6213c8;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 #input_box {
     width: 80%;
-    outline: 0;
-    border-width: 0 0 4px;
-    border-color: #000000;
-    margin-bottom: 120px;
+    border-width: 0 0 2px;
+    border-radius: 2px;
+    border-color: rgb(204, 204, 204);
+    margin-bottom: 80px;
+    border-style: solid;
+    transition: 0.2s;
+}
+
+#input_box:hover {
+    border-color: #6213c8;
 }
 
 #input_box[type="text"] {
     padding: 0 15px;
     font-family: 'Lato', sans-serif;
-    font-size: 28px;
+    font-size: 3vh;
     font-weight: bold;
     letter-spacing: 1px;
     word-spacing: 1px;
-    
+}
+
+::placeholder{
+    color: rgb(204, 204, 204);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }
 
 #generate_button {
     
     font-family: 'Lato', sans-serif;
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: bold;
     width: 50%;
     border: 3px solid #6213c8;
@@ -131,7 +179,7 @@ h1 {
 #generate_button:hover {
     color: white;
     background-color: #6213c8;
-    font-size: 40px;
+    
 }
 
 #qr_image {
@@ -150,12 +198,11 @@ h1 {
 }
 
 .download_button {
-    border: 3px solid #8b62c2;
+    border: 3px solid #6213c8;
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    background-color: #8b62c2;
     cursor: pointer;
     transition: .5s;
 }
@@ -167,3 +214,5 @@ h1 {
 .download_icon {
     height: 30px;
 }
+
+
